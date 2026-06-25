@@ -456,11 +456,9 @@ Architecture documents, case studies, and live demos available on request.
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ankitdarkhost&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ankitdarkhost&layout=compact&theme=tokyonight&hide_border=true)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ankitdarkhost&theme=tokyonight&hide_border=true)
+![GitHub Stats](./assets/github-stats.svg)
+![Top Languages](./assets/top-langs.svg)
+![GitHub Streak](./assets/github-streak.svg)
 
 </div>
 
