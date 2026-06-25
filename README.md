@@ -456,11 +456,11 @@ Architecture documents, case studies, and live demos available on request.
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ankitdarkhost&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ankitdarkhost&layout=compact&theme=tokyonight&hide_border=true)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ankitdarkhost&theme=tokyonight&hide_border=true)
 
 </div>
 
@@ -472,12 +472,12 @@ I'm available for:
 
 - ✅ **AI integrations** — Anthropic, Ollama, OpenAI-compatible, LangChain
 - ✅ **Cybersecurity & forensics tools** — pentest platforms, investigation dashboards
-- ✅ **Full-stack SaaS development** — React + NestJS/FastAPI + PostgreSQL
+- ✅ **Full-stack SaaS development** — React + NestJS/FastAPI + PostgreSQL +NodeJs
 - ✅ **Cross-platform apps** — Web + Android + iOS + Desktop (Capacitor, Electron, Tauri)
 - ✅ **GovTech & civic tech** — dashboards, reporting systems, safety platforms
 - ✅ **AI agentic systems** — code generators, autonomous agents, LLM pipelines
 
-📩 **Email:** [ankitvishwakarma80803@gmail.com](mailto:ankitvishwakarma80803@gmail.com)
+📩 **Email:** [ankit.darkhost@gmail.com](mailto:ankit.darkhost@gmail.com)
 
 > *"I build complete systems — from AI inference pipelines and forensic engines to cross-platform apps and government portals."*
 
