@@ -399,6 +399,8 @@ graph TD
 
 ### 💰 10. CryptoTrade — Crypto Trading Platform
 **Status:** `Production (Multi-version)` &nbsp;|&nbsp; **Type:** FinTech / Trading
+**URL:** https://cryptotrade-p2p.netlify.app/
+
 
 > A multi-version crypto trading platform (4 iterations: ct, ct2, ct3, ct4) with real-time market data, portfolio tracking, and trade execution UI. Each version is a standalone React + Supabase app.
 
@@ -414,6 +416,7 @@ graph TD
 
 ### 🥋 11. WuShump — MP Wushu Sports Portal
 **Status:** `Production` &nbsp;|&nbsp; **Type:** Sports Management / GovTech
+**URL:** https://wushump.com
 
 > A sports management portal for the Madhya Pradesh Wushu Association — handling athlete registration, event scheduling, results management, and coach/admin workflows.
 
