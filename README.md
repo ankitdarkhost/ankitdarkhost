@@ -456,9 +456,9 @@ Architecture documents, case studies, and live demos available on request.
 
 <div align="center">
 
-![GitHub Stats](./assets/github-stats.svg)
-![Top Languages](./assets/top-langs.svg)
-![GitHub Streak](./assets/github-streak.svg)
+![GitHub Stats](./github-stats.svg)
+![Top Languages](./top-langs.svg)
+![GitHub Streak](./github-streak.svg)
 
 </div>
 
