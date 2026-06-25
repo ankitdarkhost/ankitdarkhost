@@ -4,7 +4,7 @@
 
 ### Full-Stack Engineer · AI Developer · Cybersecurity & Forensics Specialist
 
-[![Email](https://img.shields.io/badge/Email-ankitvishwakarma80803%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankitvishwakarma80803@gmail.com)
+[![Email](https://img.shields.io/badge/Email-ankit.darkhost%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankit.darkhost@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-0A66C2?style=for-the-badge&logo=vercel&logoColor=white)](#)
 [![Upwork](https://img.shields.io/badge/Upwork-Hire%20Me-6FDA44?style=for-the-badge&logo=upwork&logoColor=white)](#)
