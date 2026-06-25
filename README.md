@@ -18,7 +18,7 @@
 I'm a **senior full-stack & AI engineer** who builds production-grade platforms at the intersection of **AI, cybersecurity, and automation**. My work spans stealth desktop tools, AI forensics platforms, government safety systems, crypto trading UIs, and AI agent frameworks — always end-to-end, always production-ready.
 
 - 🔭 Currently building: **AI-powered security & forensics platforms**, **agentic developer tools**
-- ⚡ Core stack: React · TypeScript · Python · NestJS · FastAPI · Supabase · PostgreSQL · Ollama · Anthropic API
+- ⚡ Core stack: Node js . React · TypeScript · Python · NestJS · FastAPI · Supabase · PostgreSQL · Ollama · Anthropic API
 - 🤝 Available for: freelance projects, long-term contracts, AI/security consulting
 - 📩 Contact: [ankitvishwakarma80803@gmail.com](mailto:ankitvishwakarma80803@gmail.com)
 
