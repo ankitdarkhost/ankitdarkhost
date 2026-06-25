@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 205" width="300" height="205">
+  <style>
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes grow { from { width: 0; } to { width: 100%; } }
+    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
+    .lang   { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e2e2e2; }
+    .pct    { font: 600 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae; }
+    .row    { animation: fadeIn 0.5s ease forwards; }
+  </style>
+
+  <!-- Background -->
+  <rect x="0.5" y="0.5" rx="4.5" width="299" height="204" fill="#1a1b27" stroke-opacity="0"/>
+
+  <!-- Title -->
+  <g transform="translate(25,23)">
+    <svg fill="#70a5fd" viewBox="0 0 16 16" width="16" height="16">
+      <path d="M1.75 1h8.5C11.216 1 12 1.784 12 2.75v5.5A1.75 1.75 0 0 1 10.25 10H6.06l-2.573 2.573A1.458 1.458 0 0 1 1 11.543V2.75C1 1.784 1.784 1 1.75 1Zm8.5 1.5h-8.5a.25.25 0 0 0-.25.25v8.793l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25Zm4.25.5a.75.75 0 0 1 0 1.5.25.25 0 0 0-.25.25v7.793l2.72-2.72a.749.749 0 0 1 .53-.22h2.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25.75.75 0 0 1 0-1.5 1.75 1.75 0 0 1 1.75 1.75v5.5A1.75 1.75 0 0 1 21.25 11H19l-2.573 2.573A1.458 1.458 0 0 1 14 12.543V4.25c0-.966.784-1.75 1.75-1.75Z"/>
+    </svg>
+  </g>
+  <text x="50" y="35" class="header">Most Used Languages</text>
+
+  <!-- Divider -->
+  <line x1="25" y1="45" x2="275" y2="45" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Stacked bar (full width = 250px, x=25..275) -->
+  <!-- JS 42.35% → 105.9px | TS 28.17% → 70.4px | Py 15.43% → 38.6px | CSS 8.92% → 22.3px | Other 5.13% → 12.8px -->
+  <g transform="translate(25,55)">
+    <rect x="0"     y="0" width="105" height="8" rx="4" fill="#f1e05a"/>
+    <rect x="105"   y="0" width="70"  height="8" rx="0" fill="#3178c6"/>
+    <rect x="175"   y="0" width="39"  height="8" rx="0" fill="#3572A5"/>
+    <rect x="214"   y="0" width="22"  height="8" rx="0" fill="#563d7c"/>
+    <rect x="236"   y="0" width="14"  height="8" rx="4" fill="#6e40c9" style="border-radius: 0 4px 4px 0;"/>
+    <!-- right-end rounding for last segment -->
+  </g>
+
+  <!-- Language legend rows -->
+
+  <!-- JavaScript -->
+  <g class="row" transform="translate(25,80)" style="animation-delay:0.05s; opacity:0">
+    <circle cx="5" cy="5" r="5" fill="#f1e05a"/>
+    <text x="15" y="10" class="lang">JavaScript</text>
+    <text x="230" y="10" class="pct" text-anchor="end">42.35%</text>
+  </g>
+
+  <!-- TypeScript -->
+  <g class="row" transform="translate(25,101)" style="animation-delay:0.1s; opacity:0">
+    <circle cx="5" cy="5" r="5" fill="#3178c6"/>
+    <text x="15" y="10" class="lang">TypeScript</text>
+    <text x="230" y="10" class="pct" text-anchor="end">28.17%</text>
+  </g>
+
+  <!-- Python -->
+  <g class="row" transform="translate(25,122)" style="animation-delay:0.15s; opacity:0">
+    <circle cx="5" cy="5" r="5" fill="#3572A5"/>
+    <text x="15" y="10" class="lang">Python</text>
+    <text x="230" y="10" class="pct" text-anchor="end">15.43%</text>
+  </g>
+
+  <!-- CSS -->
+  <g class="row" transform="translate(25,143)" style="animation-delay:0.2s; opacity:0">
+    <circle cx="5" cy="5" r="5" fill="#563d7c"/>
+    <text x="15" y="10" class="lang">CSS</text>
+    <text x="230" y="10" class="pct" text-anchor="end">8.92%</text>
+  </g>
+
+  <!-- Other -->
+  <g class="row" transform="translate(25,164)" style="animation-delay:0.25s; opacity:0">
+    <circle cx="5" cy="5" r="5" fill="#6e40c9"/>
+    <text x="15" y="10" class="lang">Other</text>
+    <text x="230" y="10" class="pct" text-anchor="end">5.13%</text>
+  </g>
+</svg>

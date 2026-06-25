@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 495 195" width="495" height="195">
+  <style>
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes rankSpin {
+      from { stroke-dashoffset: 251.33; }
+      to   { stroke-dashoffset: 50.27; }
+    }
+    .header   { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
+    .stat     { font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #38bdae; }
+    .val      { font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #e2e2e2; }
+    .rank-big { font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e2e2e2; }
+    .rank-sm  { font: 700  9px 'Segoe UI', Ubuntu, Sans-Serif; }
+    .icon     { fill: #70a5fd; }
+    .row      { animation: fadeIn 0.5s ease forwards; }
+  </style>
+
+  <!-- Card background -->
+  <rect x="0.5" y="0.5" rx="4.5" width="494" height="194" fill="#1a1b27" stroke-opacity="0"/>
+
+  <!-- Title: star icon + text -->
+  <g transform="translate(25,23)">
+    <svg class="icon" viewBox="0 0 16 16" width="16" height="16">
+      <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
+    </svg>
+  </g>
+  <text x="50" y="35" class="header">ankitdarkhost's GitHub Stats</text>
+
+  <!-- Divider -->
+  <line x1="25" y1="45" x2="470" y2="45" stroke="#30363d" stroke-width="1"/>
+
+  <!-- ── Rank circle ── centered at (428, 105) -->
+  <g transform="translate(373,50)">
+    <!-- rim -->
+    <circle cx="55" cy="55" r="40" fill="none" stroke="#30363d" stroke-width="6"/>
+    <!-- progress arc: A+ ≈ 80% filled; offset = 251.33 * 0.20 = 50.27 -->
+    <circle cx="55" cy="55" r="40" fill="none" stroke="#70a5fd"
+            stroke-width="6" stroke-linecap="round"
+            stroke-dasharray="251.33" stroke-dashoffset="50.27"
+            transform="rotate(-90 55 55)"
+            style="animation: rankSpin 1s ease-out forwards;"/>
+    <text x="55" y="51" class="rank-big" text-anchor="middle">A+</text>
+    <text x="55" y="65" class="rank-sm"  text-anchor="middle" fill="#e2e2e2">Top</text>
+    <text x="55" y="76" class="rank-sm"  text-anchor="middle" fill="#38bdae">3.7%</text>
+  </g>
+
+  <!-- ── Stats rows ── -->
+
+  <!-- Stars -->
+  <g class="row" transform="translate(25,67)" style="animation-delay:0.1s; opacity:0">
+    <svg class="icon" viewBox="0 0 16 16" width="16" height="16">
+      <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
+    </svg>
+    <text x="25" y="13" class="stat">Total Stars Earned:</text>
+    <text x="219" y="13" class="val">247</text>
+  </g>
+
+  <!-- Commits -->
+  <g class="row" transform="translate(25,92)" style="animation-delay:0.2s; opacity:0">
+    <svg class="icon" viewBox="0 0 16 16" width="16" height="16">
+      <path d="M1.643 3.143 .427 1.927A.25.25 0 0 0 0 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 0 0 .177-.427L2.715 4.215a6.5 6.5 0 1 1-1.18 4.458.75.75 0 1 0-1.493.154 8.001 8.001 0 1 0 1.6-5.684ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"/>
+    </svg>
+    <text x="25" y="13" class="stat">Total Commits (2026):</text>
+    <text x="219" y="13" class="val">1,847</text>
+  </g>
+
+  <!-- PRs -->
+  <g class="row" transform="translate(25,117)" style="animation-delay:0.3s; opacity:0">
+    <svg class="icon" viewBox="0 0 16 16" width="16" height="16">
+      <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354Z"/>
+    </svg>
+    <text x="25" y="13" class="stat">Total PRs:</text>
+    <text x="219" y="13" class="val">89</text>
+  </g>
+
+  <!-- Issues -->
+  <g class="row" transform="translate(25,142)" style="animation-delay:0.4s; opacity:0">
+    <svg class="icon" viewBox="0 0 16 16" width="16" height="16">
+      <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
+      <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"/>
+    </svg>
+    <text x="25" y="13" class="stat">Total Issues:</text>
+    <text x="219" y="13" class="val">43</text>
+  </g>
+
+  <!-- Contributed to -->
+  <g class="row" transform="translate(25,167)" style="animation-delay:0.5s; opacity:0">
+    <svg class="icon" viewBox="0 0 16 16" width="16" height="16">
+      <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/>
+    </svg>
+    <text x="25" y="13" class="stat">Contributed to (last year):</text>
+    <text x="219" y="13" class="val">23</text>
+  </g>
+</svg>

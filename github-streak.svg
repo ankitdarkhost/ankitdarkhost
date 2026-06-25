@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 195" width="495" height="195">
+  <style>
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes ringIn {
+      from { stroke-dashoffset: 219.91; }
+      to   { stroke-dashoffset: 43.98;  }
+    }
+    .big-num  { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
+    .label    { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae; }
+    .dates    { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #9aa5be; }
+    .total-num{ font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e2e2e2; }
+    .panel    { animation: fadeIn 0.5s ease forwards; }
+  </style>
+
+  <!-- Background -->
+  <rect x="0.5" y="0.5" rx="4.5" width="494" height="194" fill="#1a1b27" stroke-opacity="0"/>
+
+  <!-- Divider lines -->
+  <line x1="165" y1="15" x2="165" y2="180" stroke="#30363d" stroke-width="1"/>
+  <line x1="330" y1="15" x2="330" y2="180" stroke="#30363d" stroke-width="1"/>
+
+  <!-- ══ Panel 1: Total Contributions (x 0–165, center x=82) ══ -->
+  <g class="panel" style="animation-delay:0.1s; opacity:0">
+    <text x="82" y="55" class="label" text-anchor="middle">Total Contributions</text>
+    <text x="82" y="100" class="total-num" text-anchor="middle">892</text>
+    <text x="82" y="125" class="dates" text-anchor="middle">Jan 1, 2026</text>
+    <text x="82" y="141" class="dates" text-anchor="middle">– Jun 26, 2026</text>
+  </g>
+
+  <!-- ══ Panel 2: Current Streak (x 165–330, center x=247) — with ring ══ -->
+  <g class="panel" style="animation-delay:0.2s; opacity:0">
+    <!-- Fire emoji path (simplified flame shape) -->
+    <g transform="translate(228,15)">
+      <text x="10" y="24" font-size="22" text-anchor="middle">🔥</text>
+    </g>
+
+    <text x="247" y="52" class="label" text-anchor="middle">Current Streak</text>
+
+    <!-- Ring behind number -->
+    <circle cx="247" cy="97" r="35" fill="none" stroke="#30363d" stroke-width="5"/>
+    <circle cx="247" cy="97" r="35" fill="none" stroke="#70a5fd"
+            stroke-width="5" stroke-linecap="round"
+            stroke-dasharray="219.91" stroke-dashoffset="43.98"
+            transform="rotate(-90 247 97)"
+            style="animation: ringIn 1s ease-out forwards;"/>
+
+    <text x="247" y="89" class="big-num" text-anchor="middle">47</text>
+    <text x="247" y="107" class="dates" text-anchor="middle" font-size="10px">days</text>
+
+    <text x="247" y="130" class="dates" text-anchor="middle">Jun 10 – Jun 26</text>
+    <text x="247" y="146" class="dates" text-anchor="middle">2026</text>
+  </g>
+
+  <!-- ══ Panel 3: Longest Streak (x 330–495, center x=412) ══ -->
+  <g class="panel" style="animation-delay:0.3s; opacity:0">
+    <text x="412" y="55" class="label" text-anchor="middle">Longest Streak</text>
+    <text x="412" y="100" class="total-num" text-anchor="middle">83</text>
+    <text x="412" y="125" class="dates" text-anchor="middle">Mar 15, 2024</text>
+    <text x="412" y="141" class="dates" text-anchor="middle">– Jun 5, 2024</text>
+  </g>
+
+  <!-- Bottom label row -->
+  <text x="82"  y="168" class="dates" text-anchor="middle" font-size="10">Total</text>
+  <text x="247" y="168" class="dates" text-anchor="middle" font-size="10">Current</text>
+  <text x="412" y="168" class="dates" text-anchor="middle" font-size="10">Longest</text>
+</svg>
