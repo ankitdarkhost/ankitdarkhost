@@ -5,9 +5,9 @@
 ### Full-Stack Engineer · AI Developer · Cybersecurity & Forensics Specialist
 
 [![Email](https://img.shields.io/badge/Email-ankit.darkhost%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankit.darkhost@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-vishwakarma-83178216b/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-0A66C2?style=for-the-badge&logo=vercel&logoColor=white)](#)
-[![Upwork](https://img.shields.io/badge/Upwork-Hire%20Me-6FDA44?style=for-the-badge&logo=upwork&logoColor=white)](#)
+[![Upwork](https://img.shields.io/badge/Upwork-Hire%20Me-6FDA44?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~010ad38fbbb368fb69)
 
 </div>
 
@@ -20,7 +20,7 @@ I'm a **senior full-stack & AI engineer** who builds production-grade platforms 
 - 🔭 Currently building: **AI-powered security & forensics platforms**, **agentic developer tools**
 - ⚡ Core stack: Node js . React · TypeScript · Python · NestJS · FastAPI · Supabase · PostgreSQL · Ollama · Anthropic API
 - 🤝 Available for: freelance projects, long-term contracts, AI/security consulting
-- 📩 Contact: [ankitvishwakarma80803@gmail.com](mailto:ankitvishwakarma80803@gmail.com)
+- 📩 Contact: [ankit.darkhost@gmail.com](mailto:ankit.darkhost@gmail.com)
 
 ---
 
