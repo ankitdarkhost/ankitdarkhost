@@ -2,65 +2,79 @@
   <style>
     @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
     @keyframes ringIn {
-      from { stroke-dashoffset: 219.91; }
-      to   { stroke-dashoffset: 43.98;  }
+      from { stroke-dashoffset: 201.06; }
+      to   { stroke-dashoffset: 40.21;  }
     }
-    .big-num  { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
-    .label    { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae; }
-    .dates    { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #9aa5be; }
-    .total-num{ font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e2e2e2; }
-    .panel    { animation: fadeIn 0.5s ease forwards; }
+    .label   { font: 600 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae; }
+    .big-num { font: 700 34px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e2e2e2; }
+    .cur-num { font: 700 26px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
+    .sub     { font: 400 10px 'Segoe UI', Ubuntu, Sans-Serif; fill: #9aa5be; }
+    .date    { font: 400 10px 'Segoe UI', Ubuntu, Sans-Serif; fill: #9aa5be; }
   </style>
 
   <!-- Background -->
   <rect x="0.5" y="0.5" rx="4.5" width="494" height="194" fill="#1a1b27" stroke-opacity="0"/>
 
-  <!-- Divider lines -->
-  <line x1="165" y1="15" x2="165" y2="180" stroke="#30363d" stroke-width="1"/>
-  <line x1="330" y1="15" x2="330" y2="180" stroke="#30363d" stroke-width="1"/>
+  <!-- Panel dividers — leave 10px top & bottom padding -->
+  <line x1="165" y1="10" x2="165" y2="185" stroke="#30363d" stroke-width="1"/>
+  <line x1="330" y1="10" x2="330" y2="185" stroke="#30363d" stroke-width="1"/>
 
-  <!-- ══ Panel 1: Total Contributions (x 0–165, center x=82) ══ -->
-  <g class="panel" style="animation-delay:0.1s; opacity:0">
-    <text x="82" y="55" class="label" text-anchor="middle">Total Contributions</text>
-    <text x="82" y="100" class="total-num" text-anchor="middle">892</text>
-    <text x="82" y="125" class="dates" text-anchor="middle">Jan 1, 2026</text>
-    <text x="82" y="141" class="dates" text-anchor="middle">– Jun 26, 2026</text>
-  </g>
+  <!-- ══════════════════════════════════════════
+       PANEL 1 — Total Contributions (cx = 82)
+       Zone A label  : y = 25
+       Zone B value  : y = 97
+       Zone C dates  : y = 148, 163
+       ══════════════════════════════════════════ -->
+  <text x="82" y="25" class="label" text-anchor="middle">Total Contributions</text>
+  <!-- subtle decorative line under label -->
+  <line x1="32" y1="32" x2="132" y2="32" stroke="#30363d" stroke-width="0.7"/>
+  <text x="82" y="100" class="big-num" text-anchor="middle">892</text>
+  <line x1="32" y1="120" x2="132" y2="120" stroke="#30363d" stroke-width="0.7"/>
+  <text x="82" y="148" class="date" text-anchor="middle">Jan 1 – Jun 26</text>
+  <text x="82" y="163" class="date" text-anchor="middle">2026</text>
 
-  <!-- ══ Panel 2: Current Streak (x 165–330, center x=247) — with ring ══ -->
-  <g class="panel" style="animation-delay:0.2s; opacity:0">
-    <!-- Fire emoji path (simplified flame shape) -->
-    <g transform="translate(228,15)">
-      <text x="10" y="24" font-size="22" text-anchor="middle">🔥</text>
-    </g>
+  <!-- ══════════════════════════════════════════
+       PANEL 2 — Current Streak (cx = 247)
+       Zone A label  : y = 25  (fire icon y=14..34)
+       Zone B ring   : center (247, 100), r=32  →  top=68, bottom=132
+         - number    : y = 105 (baseline)
+         - "days"    : y = 118 (inside ring)
+       Zone C dates  : y = 152, 167   (gap ≥ 20px from ring bottom)
+       ══════════════════════════════════════════ -->
 
-    <text x="247" y="52" class="label" text-anchor="middle">Current Streak</text>
+  <!-- Fire icon above label -->
+  <text x="247" y="24" font-size="16" text-anchor="middle">🔥</text>
+  <text x="247" y="40" class="label" text-anchor="middle">Current Streak</text>
+  <line x1="197" y1="47" x2="297" y2="47" stroke="#30363d" stroke-width="0.7"/>
 
-    <!-- Ring behind number -->
-    <circle cx="247" cy="97" r="35" fill="none" stroke="#30363d" stroke-width="5"/>
-    <circle cx="247" cy="97" r="35" fill="none" stroke="#70a5fd"
-            stroke-width="5" stroke-linecap="round"
-            stroke-dasharray="219.91" stroke-dashoffset="43.98"
-            transform="rotate(-90 247 97)"
-            style="animation: ringIn 1s ease-out forwards;"/>
+  <!-- Ring: center (247,100), r=32, circumference=201.06 -->
+  <!-- 80% filled → dashoffset = 201.06 * 0.20 = 40.21 -->
+  <circle cx="247" cy="100" r="32" fill="none" stroke="#2d3354" stroke-width="5"/>
+  <circle cx="247" cy="100" r="32" fill="none" stroke="#70a5fd"
+          stroke-width="5" stroke-linecap="round"
+          stroke-dasharray="201.06" stroke-dashoffset="40.21"
+          transform="rotate(-90 247 100)"
+          style="animation: ringIn 1s ease-out forwards;"/>
 
-    <text x="247" y="89" class="big-num" text-anchor="middle">47</text>
-    <text x="247" y="107" class="dates" text-anchor="middle" font-size="10px">days</text>
+  <!-- Number + "days" strictly inside ring (ring: y=68..132) -->
+  <text x="247" y="107" class="cur-num" text-anchor="middle">47</text>
+  <text x="247" y="121" class="sub"     text-anchor="middle">days</text>
 
-    <text x="247" y="130" class="dates" text-anchor="middle">Jun 10 – Jun 26</text>
-    <text x="247" y="146" class="dates" text-anchor="middle">2026</text>
-  </g>
+  <!-- Dates below ring — first text at y=152 (20px below ring bottom 132) -->
+  <line x1="197" y1="137" x2="297" y2="137" stroke="#30363d" stroke-width="0.7"/>
+  <text x="247" y="152" class="date" text-anchor="middle">Jun 10 – Jun 26</text>
+  <text x="247" y="167" class="date" text-anchor="middle">2026</text>
 
-  <!-- ══ Panel 3: Longest Streak (x 330–495, center x=412) ══ -->
-  <g class="panel" style="animation-delay:0.3s; opacity:0">
-    <text x="412" y="55" class="label" text-anchor="middle">Longest Streak</text>
-    <text x="412" y="100" class="total-num" text-anchor="middle">83</text>
-    <text x="412" y="125" class="dates" text-anchor="middle">Mar 15, 2024</text>
-    <text x="412" y="141" class="dates" text-anchor="middle">– Jun 5, 2024</text>
-  </g>
-
-  <!-- Bottom label row -->
-  <text x="82"  y="168" class="dates" text-anchor="middle" font-size="10">Total</text>
-  <text x="247" y="168" class="dates" text-anchor="middle" font-size="10">Current</text>
-  <text x="412" y="168" class="dates" text-anchor="middle" font-size="10">Longest</text>
+  <!-- ══════════════════════════════════════════
+       PANEL 3 — Longest Streak (cx = 412)
+       Zone A label  : y = 25
+       Zone B value  : y = 97
+       Zone C dates  : y = 148, 163
+       ══════════════════════════════════════════ -->
+  <text x="412" y="25" class="label" text-anchor="middle">Longest Streak</text>
+  <line x1="362" y1="32" x2="462" y2="32" stroke="#30363d" stroke-width="0.7"/>
+  <text x="412" y="100" class="big-num" text-anchor="middle">83</text>
+  <line x1="362" y1="120" x2="462" y2="120" stroke="#30363d" stroke-width="0.7"/>
+  <text x="412" y="148" class="date" text-anchor="middle">Mar 15 – Jun 5</text>
+  <text x="412" y="163" class="date" text-anchor="middle">2024</text>
 </svg>
